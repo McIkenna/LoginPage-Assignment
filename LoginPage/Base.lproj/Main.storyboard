@@ -21,23 +21,23 @@
                                 <rect key="frame" x="82" y="378" width="250" height="150"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aBS-t0-BZz">
-                                        <rect key="frame" x="0.0" y="0.0" width="250" height="25.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="28"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Bz-un-eL1">
-                                        <rect key="frame" x="0.0" y="33.5" width="250" height="25"/>
+                                        <rect key="frame" x="0.0" y="36" width="250" height="27"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucT-9I-8OE">
-                                        <rect key="frame" x="0.0" y="66.5" width="250" height="63.5"/>
+                                        <rect key="frame" x="0.0" y="71" width="250" height="55"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.94509803920000002" green="0.16862745100000001" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcu-97-b8W">
-                                        <rect key="frame" x="0.0" y="138" width="250" height="12"/>
+                                        <rect key="frame" x="0.0" y="134" width="250" height="16"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Login">
                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
