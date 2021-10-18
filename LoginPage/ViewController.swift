@@ -26,10 +26,17 @@ class ViewController: UIViewController {
     @IBAction func onClickLoginBtn(_ sender : Any){
         
         if(emailField.text == email && passwordField.text == password ){
-                 let controller = storyboard?.instantiateViewController(withIdentifier: "TableViewNC") as! UINavigationController
-                 controller.modalPresentationStyle = .fullScreen
-                 self.present(controller, animated: true, completion: nil)
-            message.text = " "
+            let mainScreen = UIStoryboard(name: "Main", bundle: nil)
+             let controller = mainScreen.instantiateViewController(withIdentifier: "TableViewNC")
+            controller.modalTransitionStyle = .flipHorizontal
+            controller.modalPresentationStyle = .fullScreen
+            self.present(controller, animated: true, completion: nil)
+           // navigationController?.pushViewController(controller, animated: true)
+            emailField.text = ""
+            passwordField.text = ""
+            message.text = ""
+            emailField.backgroundColor = .white
+            passwordField.backgroundColor = .white
         }else{
             message.text = "Email or Password is incorrect"
             emailField.backgroundColor = .red
